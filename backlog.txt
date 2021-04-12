@@ -1,0 +1,41 @@
+As a user I can create a contact
+- first name
+- last name 
+- phone number
+
+  POST /api/contact/create which accepts { firstName, lastName, phoneNumber }
+
+As a user I can list all of my contacts
+
+  GET /api/contact/list
+
+As a user I can search for contacts 
+- by name fragment
+
+  GET /api/contact/searchByName which accepts { nameFragment }
+
+As a user I can edit a contact
+
+As a user I can delete a contact
+
+As a user I can group contacts?
+
+As a user I can search for contacts 
+- by phone number fragment
+
+Favorite contacts 
+cross reference search calendar for important dates
+arrange by type/alphabetical?
+Add pictures of contacts 
+add birthday
+multiple contact types... cell, land line, email 
+add notes to contact
+Use voice to search 
+add to calendar
+reminders
+Back up the whole phone book
+
+
+Organizing principle:
+object names and verbs in path 
+ids in path when needed
