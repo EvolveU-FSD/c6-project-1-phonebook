@@ -12,11 +12,14 @@ As a user I can list all of my contacts
 As a user I can search for contacts 
 - by name fragment
 
-  GET /api/contact/searchByName which accepts { nameFragment }
+  GET /api/contact/searchByName which accepts ? nameFragment 
 
 As a user I can edit a contact
-
+  POST /api/contact/:contactId
+  
 As a user I can delete a contact
+  POST /api/contact/:contactId/delete
+  DELETE /api/contact/:contactId
 
 As a user I can group contacts?
 
