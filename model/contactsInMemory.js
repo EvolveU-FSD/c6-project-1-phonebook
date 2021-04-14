@@ -1,13 +1,15 @@
 let contacts = []
 
 async function createContact(firstName, lastName, phoneNumber) {
-   let newContact = {
+    let contactId = contacts.length
+    let newContact = {
+        _id: contactId,
        firstName,
        lastName, 
-       phoneNumber
-   } 
-   contacts.push(newContact)
-   return contacts.length-1
+       phoneNumber,
+    } 
+    contacts.push(newContact)
+    return contactId
 }
 
 async function listContacts() {
